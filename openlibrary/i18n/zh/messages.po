@@ -1,0 +1,190 @@
+# Chinese translations for Open Library.
+# Copyright (C) 2018 Internet Archive
+# This file is distributed under the same license as the Open Library
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Open Library VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-09-20 19:55+0000\n"
+"PO-Revision-Date: 2021-10-01 15:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.7.0\n"
+"X-Generator: Poedit 2.3\n"
+
+#: account.html:7 account.html:12 account/import.html:14
+#: account/notifications.html:13 account/privacy.html:13 lib/nav_head.html:15
+#: lib/search_head.html:71 type/user/view.html:27
+msgid "Settings"
+msgstr "设置"
+
+#: account.html:16
+msgid "Change Password"
+msgstr "修改密码"
+
+#: account.html:17
+msgid "Update Email Address"
+msgstr "更新电子邮箱地址"
+
+#: account.html:18
+msgid "Your Notifications"
+msgstr "您的消息通知"
+
+#: account.html:19
+msgid "Internet Archive Announcements"
+msgstr "互联网档案公告"
+
+#: account.html:20
+msgid "Your Privacy Settings"
+msgstr "您的隐私设置"
+
+#: account.html:21 databarDiff.html:12
+msgid "View"
+msgstr "查看"
+
+#: account.html:21
+msgid "or"
+msgstr "或"
+
+#: account.html:21 databarHistory.html:27 databarTemplate.html:13
+#: databarView.html:34 type/edition/view.html:357 type/work/view.html:357
+msgid "Edit"
+msgstr "编辑"
+
+#: account.html:21
+msgid "Your Profile Page"
+msgstr "您的个人资料页"
+
+#: account.html:22
+msgid "View or Edit your Reading Log"
+msgstr "查看或编辑您的阅读日志"
+
+#: account.html:23
+msgid "View or Edit your Lists"
+msgstr "查看或编辑您的清单"
+
+#: account.html:24
+msgid "Import and Export Options"
+msgstr "导入和导出选项"
+
+#: account.html:26
+msgid "Please contact us if you need help with anything else."
+msgstr ""
+"如果您还需要其他帮助，请联系我们。"
+
+#: barcodescanner.html:7
+msgid "Barcode Scanner (Beta)"
+msgstr "条形码扫描器 (Beta)"
+
+#: barcodescanner.html:14
+msgid "Point your camera at a barcode! 📷"
+msgstr "请将您的相机对准条形码！ 📷"
+
+#: account/borrow.html:82 borrow_admin.html:104
+#, python-format
+msgid "1 Current Loan"
+msgid_plural "%(count)d Current Loans"
+msgstr[0] "目前的贷款"
+msgstr[1] "%(count)d 目前贷款"
+
+#: account/borrow.html:84 admin/loans_table.html:41 borrow_admin.html:106
+msgid "Loan Expires"
+msgstr "贷款到期"
+
+#: borrow_admin.html:168
+#, python-format
+msgid "%d person waiting"
+msgid_plural "%d people waiting"
+msgstr[0] "%d 人等待中"
+msgstr[1] "%d 人等待中"
+
+#: ManageWaitlistButton.html:11 borrow_admin.html:186
+#, python-format
+msgid "Waiting for %d day"
+msgid_plural "Waiting for %d days"
+msgstr[0] "等待 %d 天"
+msgstr[1] "等待 %d 天"
+
+#: diff.html:7
+#, python-format
+msgid "Diff on %s"
+msgstr "不同于 %s"
+
+#: diff.html:26
+msgid "Added"
+msgstr "已添加"
+
+#: diff.html:27
+msgid "Modified"
+msgstr "已修改"
+
+#: diff.html:28
+msgid "Removed"
+msgstr "已移除"
+
+#: diff.html:29
+msgid "Not changed"
+msgstr "没有改变"
+
+#: diff.html:39
+#, python-format
+msgid "Revision %d"
+msgstr "修订 %d"
+
+#: AuthorList.html:9 SearchResultsWork.html:39 books/check.html:32
+#: books/edit/edition.html:75 books/show.html:16 covers/book_cover.html:41
+#: covers/book_cover_single_edition.html:36 covers/book_cover_work.html:32
+#: diff.html:42 lists/preview.html:20 type/edition/publisher_line.html:15
+#: type/edition/view.html:188 type/work/view.html:188
+msgid "by"
+msgstr "出自于"
+
+#: diff.html:44
+msgid "by Anonymous"
+msgstr "作者：匿名"
+
+#: diff.html:110
+msgid "Differences"
+msgstr "不同之处"
+
+#: diff.html:168
+msgid "Both the revisions are identical."
+msgstr "两次修订都是相同的。"
+
+#: edit_yaml.html:14 lib/edit_head.html:17
+msgid "You're in edit mode."
+msgstr "您现在处于编辑模式。"
+
+#: edit_yaml.html:15 lib/edit_head.html:18
+msgid "Cancel, and go back."
+msgstr "取消并返回。"
+
+#: edit_yaml.html:22
+msgid "YAML Representation:"
+msgstr "YAML 代表:"
+
+#: BookPreview.html:11 editpage.html:15
+msgid "Preview"
+msgstr "预览"
+
+#: history.html:23
+msgid "History of edits to"
+msgstr "编辑历史"
+
+#: history.html:31
+msgid "Revision"
+msgstr "修订"
+
+#: RecentChanges.html:17 RecentChangesAdmin.html:20 RecentChangesUsers.html:20
+#: admin/ip/view.html:44 admin/people/edits.html:41 history.html:32
+#: recentchanges/render.html:30 recentchanges/updated_records.html:28
+msgid "When"
+msgstr "何时"
