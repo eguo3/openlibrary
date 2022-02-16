@@ -189,4 +189,206 @@ msgstr "修订"
 msgid "When"
 msgstr "何时"
 
+#: RecentChanges.html:19 admin/ip/view.html:46 admin/loans_table.html:46
+#: admin/people/edits.html:43 admin/waitinglists.html:28 history.html:33
+#: recentchanges/render.html:32
+msgid "Who"
+msgstr "何人"
 
+#: RecentChanges.html:20 RecentChangesUsers.html:22 admin/ip/view.html:47
+#: admin/people/edits.html:44 history.html:34 recentchanges/render.html:33
+#: recentchanges/updated_records.html:30
+msgid "Comment"
+msgstr "评论"
+
+#: history.html:35
+msgid "Diff"
+msgstr "差异"
+
+#: history.html:42 history.html:73
+msgid "Compare"
+msgstr "对比"
+
+#: history.html:42 history.html:73
+msgid "See Diff"
+msgstr "查看差异"
+
+#: history.html:48 lib/history.html:78
+#, python-format
+msgid "View revision %s"
+msgstr "查看修订 %s"
+
+#: history.html:85
+msgid "Back"
+msgstr "返回"
+
+#: Pager.html:34 history.html:87 lib/pagination.html:37 showmarc.html:54
+msgid "Next"
+msgstr "下一个"
+
+#: internalerror.html:14
+msgid "Sorry. There seems to be a problem with what you were just looking at."
+msgstr "十分抱歉。您刚刚看的东西似乎出现了问题。"
+
+#: internalerror.html:15
+#, python-format
+msgid ""
+"We've noted the error %s and will look into it as soon as possible. Head for "
+"<a href=\"/\">home</a>?"
+msgstr ""
+"我们已注意到此错误 %s 并将尽快调查此错误。前往 "
+"<a href=\"/\">首页</a>?"
+
+#: lib/nav_head.html:31 library_explorer.html:6
+msgid "Library Explorer"
+msgstr "图书馆资源管理器"
+
+#: lib/header_dropdown.html:46 lib/nav_head.html:108 login.html:10
+#: login.html:62
+msgid "Log In"
+msgstr "登录"
+
+#: login.html:15
+msgid ""
+"Please enter your <a href=\"https://archive.org\">Internet Archive</a> email "
+"and password to access your Open Library account."
+msgstr ""
+"请输入您的电子邮箱地址和密码 <a " 
+"href=\"https://archive.org\">Internet Archive</a> 以进入您的开放图书馆账号。"
+
+#: account/create.html:46 login.html:18
+#, python-format
+msgid "You are already logged into Open Library as %(user)s."
+msgstr "您已经以 %(user)s 登录开放图书馆了。"
+
+#: account/create.html:47 login.html:19
+msgid ""
+"If you'd like to create a new, different Open Library account, you'll need "
+"to <a href=\"javascript:;\" onclick=\"document.forms['logout']."
+"submit()\">log out</a> and start the signup process afresh."
+msgstr ""
+"如果您想要创建一个新的开放图书馆账号，您需要 "
+"to <a href=\"javascript:;\" onclick=\"document.forms['logout']."
+"submit()\">退出当前登录</a>并重新开始创建新账号的流程。"
+
+#: login.html:29
+msgid "Email"
+msgstr "电子邮箱"
+
+#: login.html:31
+msgid "Forgot your Internet Archive email?"
+msgstr "忘记您的Internet Archive电子邮箱？"
+
+#: account/email/forgot-ia.html:33 forms.py:20 login.html:41
+msgid "Password"
+msgstr "密码"
+
+#: login.html:51
+msgid "Remember me"
+msgstr "记住我"
+
+#: account/email/forgot.html:48 login.html:66
+msgid "Forgot your Password?"
+msgstr "忘记您的密码？"
+
+#: login.html:68
+msgid ""
+"Not a member of Open Library? <a href=\"/account/create\">Sign up now</a>."
+msgstr ""
+"还不是开放图书馆的成员？<a href=\"/account/create"
+"\">那么现在就注册吧</a>。"
+
+#: messages.html:11
+msgid "Created new author record."
+msgstr "创建了新的作者记录。"
+
+#: messages.html:12
+msgid "Created new edition record."
+msgstr "创建了新的编辑记录。"
+
+#: messages.html:13
+msgid "Created new work record."
+msgstr "创建了新的作品记录。"
+
+#: messages.html:14
+msgid "Added new book."
+msgstr "添加了新的书籍。"
+
+#: messages.html:16
+msgid "Thank you very much for adding that new book!"
+msgstr "非常感谢您添加了这本新的书籍！"
+
+#: messages.html:17 messages.html:18
+msgid "Thank you very much for improving that record!"
+msgstr "非常感谢您完善了这份记录！"
+
+#: notfound.html:7
+#, python-format
+msgid "%(path)s is not found"
+msgstr "%(path)s 未找到"
+
+#: languages/notfound.html:10 notfound.html:14
+msgid "404 - Page Not Found"
+msgstr "404 - 该页面不存在"
+
+#: notfound.html:18
+#, python-format
+msgid "%(path)s does not exist."
+msgstr "%(path)s 不存在。"
+
+#: notfound.html:22
+msgid "Create it?"
+msgstr "要创建吗？"
+
+#: notfound.html:26
+msgid "Looking for a template/macro?"
+msgstr "在寻找模板？/macro?"
+
+#: permission.html:10
+msgid "Permission of"
+msgstr "权限"
+
+#: permission.html:18
+msgid "Permission"
+msgstr "权限"
+
+#: permission.html:28
+msgid "Child Permission"
+msgstr "儿童权限"
+
+#: permission_denied.html:10
+msgid "Permission denied."
+msgstr "权限被拒绝。"
+
+#: permission_denied.html:30
+#, python-format
+msgid "You may <a href=\"%s\">log in</a> if you have the required permissions."
+msgstr ""
+"您可以<a href=\"%s\">登录</a>如果您拥有所需权限。"
+
+#: showamazon.html:8 showamazon.html:11 showbwb.html:8 showbwb.html:11
+msgid "Record details of"
+msgstr "记录此细节"
+
+#: showamazon.html:15 showbwb.html:15
+msgid "This record came from"
+msgstr "这份记录来自"
+
+#: showia.html:42 showmarc.html:48
+msgid "Invalid MARC record."
+msgstr "无效的MARC记录。"
+
+#: status.html:17
+msgid "Server status"
+msgstr "服务器状态"
+
+#: SubjectTags.html:23 lib/nav_foot.html:28 lib/nav_head.html:30
+#: subjects.html:9 subjects/notfound.html:11 type/author/view.html:161
+#: type/list/view.html:273 work_search.html:68
+msgid "Subjects"
+msgstr "主题"
+
+#: SubjectTags.html:27 subjects.html:9 type/author/view.html:162
+#: type/list/view.html:275 work_search.html:70
+msgid "Places"
+msgstr "地点"
