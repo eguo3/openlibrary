@@ -451,3 +451,206 @@ msgstr "或继续缩放。"
 #: subjects.html:41
 msgid "This graph charts editions published on this subject."
 msgstr "这张图表记录了这一主题出版的版本。"
+
+#: publishers/view.html:42 subjects.html:47
+msgid "Editions Published"
+msgstr "版本已出版"
+
+#: admin/imports.html:18 publishers/view.html:44 subjects.html:49
+msgid "You need to have JavaScript turned on to see the nifty chart!"
+msgstr "您需要打开JavaScript才能看到漂亮的图表!"
+
+#: publishers/view.html:46 subjects.html:51
+msgid "Year of Publication"
+msgstr "出版年份"
+
+#: subjects.html:57
+msgid "Related..."
+msgstr "相关的..."
+
+#: publishers/view.html:64 subjects.html:71
+msgid "None found."
+msgstr "未发现。"
+
+#: publishers/view.html:81 subjects.html:86
+msgid "See more books by, and learn about, this author"
+msgstr "查看更多该作者的书籍，以及了解该作者"
+
+#: account/borrow.html:159 authors/index.html:27 publishers/view.html:83
+#: search/authors.html:66 search/publishers.html:29 search/subjects.html:89
+#: subjects.html:88
+#, python-format
+msgid "1 book"
+msgid_plural "%(count)d books"
+msgstr[0] "1本书"
+msgstr[1] "%(count)d 本书"
+
+#: subjects.html:92
+msgid "Prolific Authors"
+msgstr "多产作家"
+
+#: subjects.html:93
+msgid "who have written the most books on this subject"
+msgstr "在这个主题写过最多书籍的作家"
+
+#: publishers/view.html:104 subjects.html:109
+msgid "Get more information about this publisher"
+msgstr "获取更多关于该出版商的信息"
+
+#: SearchResultsWork.html:55 books/check.html:36 merge/authors.html:82
+#: publishers/view.html:106 subjects.html:111
+#, python-format
+msgid "1 edition"
+msgid_plural "%(count)s editions"
+msgstr[0] "1个版本"
+msgstr[1] "%(count)s 个版本"
+
+#: support.html:7 support.html:10
+msgid "How can we help?"
+msgstr "我们能提供什么帮助？"
+
+#: support.html:16
+msgid ""
+"Your question has been sent to our support team. We'll get back to you "
+"shortly. You can also <a href=\"https://twitter.com/openlibrary\">contact us "
+"on Twitter</a>."
+msgstr ""
+"您的提问已发送到我们的支持团队。我们将"
+"很快给您答复。您也可以<a href=\"https://twitter.com/"
+"openlibrary\">在推特上联系我们</a>。"
+
+#: support.html:19
+msgid ""
+"Please check our <a href=\"/help/\">Help Pages</a> and <a href=\"/help/faq"
+"\">Frequently Asked Questions</a> (FAQ) to see if your question is answered "
+"there. Thank you."
+msgstr ""
+"请查看我们的<a href=\"/help/\">帮助页面</a> 和 <a "
+"href=\"/help/faq\">常见问题</a>看看您的疑问是否得到解答。"
+"谢谢。"
+
+#: support.html:22
+msgid "Your Name"
+msgstr "您的名字"
+
+#: support.html:27
+msgid "Your Email Address"
+msgstr "您的电子邮箱地址"
+
+#: support.html:28
+msgid "We'll need this if you want a reply"
+msgstr "我们需要这些资料如果您想要得到答复。"
+
+#: support.html:29
+msgid ""
+"If you wish to be contacted by other means, please add your contact "
+"preference and details to your question."
+msgstr ""
+"如果您希望我们用其他方式联系您，请添加您的"
+"首选联系方式和您问题的详情。"
+
+#: support.html:33
+msgid "Topic"
+msgstr "主题"
+
+#: support.html:36
+msgid "Select..."
+msgstr "选择..."
+
+#: support.html:37
+msgid "Borrowing Help"
+msgstr "借阅帮助"
+
+#: support.html:38
+msgid "Developer/Code Question"
+msgstr "开发人员/代码问题"
+
+#: support.html:39
+msgid "Editing Issue"
+msgstr "编辑问题"
+
+#: support.html:40
+msgid "Login Trouble"
+msgstr "登录问题"
+
+#: support.html:41
+msgid "Spam Report"
+msgstr "垃圾邮件举报"
+
+#: support.html:42
+msgid "Waiting List"
+msgstr "等候名单"
+
+#: support.html:43
+msgid "Other Question"
+msgstr "其他问题"
+
+#: support.html:49
+msgid "Your Question"
+msgstr "您的问题"
+
+#: support.html:50
+msgid "Note: our staff will likely only be able respond in English."
+msgstr "注意：我们的工作人员可能只能用英语回复。"
+
+#: support.html:54
+msgid ""
+"If you encounter an error message, please include it. For questions about "
+"our books, please provide the title/author or Open Library ID."
+msgstr ""
+"如果您遇到了错误信息，请加上它。如果对我们的书籍"
+"有疑问，请提供书名/作者或者开发图书馆的ID。"
+
+#: support.html:58
+msgid "Which page were you looking at?"
+msgstr "您当时在看哪一个页面？"
+
+#: support.html:69
+msgid "Send"
+msgstr "发送"
+
+#: EditButtons.html:23 EditButtonsMacros.html:26 account/create.html:86
+#: account/notifications.html:59 account/password/reset.html:24
+#: account/privacy.html:56 admin/imports-add.html:28 books/add.html:84
+#: books/edit/addfield.html:87 books/edit/addfield.html:133
+#: books/edit/addfield.html:177 covers/add.html:78 covers/manage.html:51
+#: databarAuthor.html:66 databarEdit.html:13 lists/widget.html:340
+#: merge/authors.html:97 support.html:71
+msgid "Cancel"
+msgstr "取消"
+
+#: viewpage.html:13
+msgid "Revert to this revision?"
+msgstr "要恢复到这一修订版本吗？"
+
+#: viewpage.html:16
+msgid "Revert to this revision"
+msgstr "恢复到这一修订版本"
+
+#: widget.html:33
+#, python-format
+msgid "Read \"%(title)s\""
+msgstr "阅读 \"%(title)s\""
+
+#: LoanReadForm.html:9 ReadButton.html:19 books/show.html:34
+#: type/list/embed.html:69 widget.html:33
+msgid "Read"
+msgstr "阅读"
+
+#: widget.html:38
+#, python-format
+msgid "Borrow \"%(title)s\""
+msgstr "借阅 \"%(title)s\""
+
+#: ReadButton.html:15 type/list/embed.html:80 widget.html:38
+msgid "Borrow"
+msgstr "借阅"
+
+#: widget.html:44
+#, python-format
+msgid "Join waitlist for &quot;%(title)s&quot;"
+msgstr "加入 «%(title)s» 等候名单"
+
+#: LoanStatus.html:89 widget.html:44
+msgid "Join Waitlist"
+msgstr "加入等候名单"
