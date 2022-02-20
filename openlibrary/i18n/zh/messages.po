@@ -654,3 +654,129 @@ msgstr "加入 «%(title)s» 等候名单"
 #: LoanStatus.html:89 widget.html:44
 msgid "Join Waitlist"
 msgstr "加入等候名单"
+
+#: widget.html:48
+#, python-format
+msgid "Learn more about &quot;%(title)s&quot; at OpenLibrary"
+msgstr "在开放图书馆了解更多关于«%(title)s»的信息"
+
+#: LoanStatus.html:108 widget.html:48
+msgid "Learn More"
+msgstr "了解更多"
+
+#: widget.html:50
+msgid "on "
+msgstr "在"
+
+#: search/authors.html:37 search/subjects.html:27 work_search.html:58
+#: work_search.html:169
+#, python-format
+msgid "1 hit"
+msgid_plural "%(count)s hits"
+msgstr[0] "1 次点击"
+msgstr[1] "%(count)s 次点击"
+
+#: lib/nav_foot.html:30 lib/nav_head.html:36 search/advancedsearch.html:7
+#: search/advancedsearch.html:10 search/advancedsearch.html:14
+#: work_search.html:62
+msgid "Advanced Search"
+msgstr "高级搜索"
+
+#: work_search.html:66
+msgid "eBook?"
+msgstr "电子书？"
+
+#: books/add.html:34 books/edit.html:85 books/edit/edition.html:244
+#: lib/nav_head.html:83 lib/search_foot.html:9 lib/search_head.html:9
+#: search/advancedsearch.html:20 work_search.html:67 work_search.html:147
+msgid "Author"
+msgstr "作者"
+
+#: work_search.html:72
+msgid "First published"
+msgstr "首次出版"
+
+#: lib/search_foot.html:14 lib/search_head.html:14
+#: search/advancedsearch.html:40 work_search.html:73
+msgid "Publisher"
+msgstr "出版商"
+
+#: lib/search_foot.html:29 work_search.html:74
+msgid "Language"
+msgstr "语言"
+
+#: work_search.html:75
+msgid "Classic eBooks"
+msgstr "经典电子书"
+
+#: work_search.html:82
+msgid "Keywords"
+msgstr "关键词"
+
+#: recentchanges/index.html:60 work_search.html:87
+msgid "Everything"
+msgstr "所有"
+
+#: work_search.html:89
+msgid "Ebooks"
+msgstr "电子书"
+
+#: work_search.html:91
+msgid "Print Disabled"
+msgstr "禁止打印"
+
+#: work_search.html:107
+msgid "eBook"
+msgstr "电子书"
+
+#: work_search.html:110
+msgid "Classic eBook"
+msgstr "经典电子书"
+
+#: work_search.html:129
+msgid "Explore Classic eBooks"
+msgstr "浏览经典电子书"
+
+#: work_search.html:129
+msgid "Only Classic eBooks"
+msgstr "仅限经典电子书"
+
+#: work_search.html:133 work_search.html:135 work_search.html:137
+#: work_search.html:139
+#, python-format
+msgid "Explore books about %(subject)s"
+msgstr "浏览关于 %(subject)s 的书籍"
+
+#: merge/authors.html:84 work_search.html:141
+msgid "First published in"
+msgstr "首次出版于"
+
+#: work_search.html:143
+msgid "Written in"
+msgstr "写于"
+
+#: work_search.html:145
+msgid "Published by"
+msgstr "出版自"
+
+#: work_search.html:148
+msgid "Click to remove this facet"
+msgstr "点击删除此面"
+
+#: work_search.html:150
+#, python-format
+msgid "%(title)s - search"
+msgstr "%(title)s - 搜索"
+
+#: search/lists.html:29 work_search.html:164
+msgid "No results found."
+msgstr "没有找到任何结果。"
+
+#: search/lists.html:30 work_search.html:165
+#, python-format
+msgid "Search for books containing the phrase \"%s\"?"
+msgstr "搜索包含 \"%s\" 短语的书籍？"
+
+#: work_search.html:194
+msgid "Zoom In"
+msgstr "放大"
