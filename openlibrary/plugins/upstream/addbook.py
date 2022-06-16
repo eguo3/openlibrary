@@ -1,5 +1,7 @@
 """Handlers for adding and editing books."""
 
+import io
+import itertools
 import web
 import json
 import csv
@@ -25,8 +27,7 @@ from openlibrary.plugins.upstream.utils import render_template, fuzzy_find
 from openlibrary.plugins.upstream.account import as_admin
 from openlibrary.plugins.recaptcha import recaptcha
 
-import six
-from six.moves import urllib
+import urllib
 from web.webapi import SeeOther
 
 
@@ -542,7 +543,8 @@ class SaveBookHelper:
         formdata = utils.unflatten(formdata)
         work_data, edition_data = self.process_input(formdata)
 
-        self.process_new_fields(formdata)
+        if not delete:
+            self.process_new_fields(formdata)
 
         saveutil = DocSaveHelper()
 
@@ -723,7 +725,7 @@ class SaveBookHelper:
             """
             if not subjects:
                 return
-            f = six.StringIO(subjects.replace('\r\n',''))
+            f = io.StringIO(subjects.replace('\r\n',''))
             dedup = set()
             for s in next(csv.reader(f, dialect='excel', skipinitialspace=True)):
                 if s.lower() not in dedup:
@@ -1015,13 +1017,9 @@ class languages_autocomplete(delegate.page):
     def GET(self):
         i = web.input(q="", limit=5)
         i.limit = safeint(i.limit, 5)
-
-        languages = [
-            lang
-            for lang in utils.get_languages()
-            if lang.name.lower().startswith(i.q.lower())
-        ]
-        return to_json(languages[: i.limit])
+        return to_json(
+            list(itertools.islice(utils.autocomplete_languages(i.q), i.limit))
+        )
 
 
 class works_autocomplete(delegate.page):

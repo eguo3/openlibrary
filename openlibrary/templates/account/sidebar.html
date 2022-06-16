@@ -17,24 +17,10 @@ $ counts = counts or pa.get_sidebar_counts
       <li><a href="/people/$username" $('class=selected' if key == 'profile' else '')>$_('Profile Page')</a></li>
       $if owners_page:
         <li><a href="/account" $('class=selected' if key == 'settings' else '')>$_('Settings & Privacy')</a></li>
+        <hr/>
+        <li><a href="/account/loans" $('class=selected' if key == 'loans' else '')>$_('Loans')</a></li>
+        <li><a class="external-link" href="https://archive.org/account/?tab=loans#loans-history">$_('Loan History')</a></li>
     </ul>
-    $if owners_page:
-      <ul class="sidebar-section">
-        <li class="section-header">$_('Loans')</li>
-        <li>
-          <a href="/account/loans" $('class=selected' if key == 'loans' else '')>
-            $_('Checked out')
-          </a>
-        </li>
-        <li>
-          <a href="/account/waitlist" $('class=selected' if key == 'waitlist' else '')>
-            $_('Waitlist')
-          </a>
-        </li>
-        <li>
-          <a class="external-link" href="https://archive.org/account/?tab=loans#loans-history">$_('Loan History')</a>
-        </li>
-      </ul>
     $if public or owners_page:
       <ul class="sidebar-section">
         <li class="section-header">$_('Reading Log')</li>
@@ -60,6 +46,7 @@ $ counts = counts or pa.get_sidebar_counts
     <ul class="sidebar-section">
       <li class="section-header section-header-split"><span>$_('Lists')</span> <a href="/people/$username/lists" class="li-count">$_('See All') ($len(lists))</a></li>
         <div class="list-overflow">
+          $ placeholder_name = _('Untitled list')
           $for lst in lists:
           $# e.g. OL1L from /people/mekBot/lists/OL1L
             $ list_id = lst.key.split('/')[-1]
@@ -69,7 +56,7 @@ $ counts = counts or pa.get_sidebar_counts
               $ path_id = ctx.path.split('/')[4]
               $if list_id == path_id:
                 $ class_list = class_list + 'selected'
-            <li><a class="$class_list" href="/people/$username/lists/$list_id"><span class="li-count">$(len(lst.seeds))</span>$lst['name']</a></li>
+            <li><a class="$class_list" href="/people/$username/lists/$list_id"><span class="li-count">$(len(lst.seeds))</span>$(lst['name'] if lst['name'] else '[%s]' % placeholder_name)</a></li>
         </div>
     </ul>
   </div>

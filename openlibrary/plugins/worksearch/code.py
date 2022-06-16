@@ -11,7 +11,7 @@ from json import JSONDecodeError
 import requests
 import web
 from requests import Response
-from six.moves import urllib
+import urllib
 
 from infogami import config
 from infogami.utils import delegate, stats
@@ -21,8 +21,7 @@ from openlibrary.core.lending import add_availability, get_availability_of_ocaid
 from openlibrary.core.models import Edition  # noqa: E402
 from openlibrary.plugins.inside.code import fulltext_search
 from openlibrary.plugins.openlibrary.processors import urlsafe
-from openlibrary.plugins.upstream.utils import urlencode
-from openlibrary.solr.update_work import get_solr_next
+from openlibrary.plugins.upstream.utils import get_language_name, urlencode
 from openlibrary.solr.solr_types import SolrDocument
 from openlibrary.utils import escape_bracket
 from openlibrary.utils.ddc import (
@@ -225,11 +224,6 @@ def read_author_facet(author_facet: str) -> tuple[str, str]:
     return key, name
 
 
-def get_language_name(code):
-    lang = web.ctx.site.get('/languages/' + code)
-    return lang.name if lang else "'%s' unknown" % code
-
-
 def process_facet(
     field: str, facets: Iterable[tuple[str, int]]
 ) -> tuple[str, str, int]:
@@ -245,7 +239,7 @@ def process_facet(
                 key, name = read_author_facet(val)
                 yield (key, name, count)
             elif field == 'language':
-                yield (val, get_language_name(val), count)
+                yield (val, get_language_name(f'/languages/{val}'), count)
             else:
                 yield (val, val, count)
 
@@ -1189,19 +1183,17 @@ def rewrite_list_query(q, page, offset, limit):
 
 @public
 def work_search(
-    query,
-    sort=None,
-    page=1,
-    offset=0,
-    limit=100,
-    fields='*',
-    facet=True,
-    spellcheck_count=None,
-):
+    query: dict,
+    sort: str = None,
+    page: int = 1,
+    offset: int = 0,
+    limit: int = 100,
+    fields: str = '*',
+    facet: bool = True,
+    spellcheck_count: int = None,
+) -> dict:
     """
-    params:
-    query: dict
-    sort: str editions|old|new|scans
+    :param sort: key of SORTS dict at the top of this file
     """
     # Ensure we don't mutate the `query` passed in by reference
     query = copy.deepcopy(query)
@@ -1224,8 +1216,9 @@ def work_search(
             facet=facet,
             spellcheck_count=spellcheck_count,
         )
-        response = reply['response'] or ''
-    except (ValueError, OSError) as e:
+        assert reply, "Received None response from run_solr_query"
+        response = reply['response']
+    except (ValueError, OSError, AssertionError) as e:
         logger.error("Error in processing search API.")
         response = dict(start=0, numFound=0, docs=[], error=str(e))
 
